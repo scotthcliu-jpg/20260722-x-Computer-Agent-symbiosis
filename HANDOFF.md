@@ -2,11 +2,11 @@
 
 ## 目前做到哪
 
-已完成跨電腦、跨 AI Agent 共生架構指南，GitHub repo 已更名為 `20260722-x-Computer-Agent-symbiosis` 並公開。舊本機來源與專用同步腳本也已調整為新 repo 識別，避免未來同步覆蓋回舊名稱。
+已完成跨電腦、跨 AI Agent 共生架構指南，GitHub repo 已更名為 `20260722-x-Computer-Agent-symbiosis` 並公開。舊本機來源與專用同步腳本已調整為新 repo 識別；參考架構已發布 `agent-sync-v1.0.1`，完整 `sync-health` 稽核通過。
 
 ## 目前狀態
 
-- clean，等待本次收工 commit、push 與最終 remote HEAD 驗證。
+- 收工檢核已通過，`handoff_ready: yes`；最終 HANDOFF commit 推送後由 remote HEAD 驗證接手版本。
 
 ## 接手狀態
 
@@ -14,7 +14,7 @@
 - session start commit: `536f689733847bbde582718f3fdf820e60e979fe`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: `2026-07-22 22:50 +08:00`，本次收工最終 commit 以 GitHub remote HEAD 為準
+- last sync verification: `2026-07-22 22:57 +08:00`，本次收工最終 commit 以 GitHub remote HEAD 為準
 - last updater: `Codex @ TZNB1169`
 - next Agent rule: 可接手，但開工仍須先執行唯讀 startup 並確認 local HEAD 等於 remote HEAD
 
@@ -25,6 +25,7 @@
 3. 說明 `project-init-sync`、`project-startup`、`project-wrapup`、`sync-health` 四個 Skills。
 4. Repo 改為 public 並更名為 `20260722-x-Computer-Agent-symbiosis`。
 5. README、PROJECT、HANDOFF 與舊同步腳本已對齊新 repo 名稱。
+6. 修正 Windows Git root 驗證誤判，發布 `agent-sync-v1.0.1`；完整稽核結果為 0 failures、0 warnings。
 
 ## 下一步
 
@@ -44,11 +45,11 @@
 | 角色 | 狀態 |
 |---|---|
 | Execution 本機 NTFS | clean，使用專用本機 clone |
-| Version GitHub | public repo；本次收工後驗證 remote HEAD |
+| Version GitHub | public repo；最終 HANDOFF commit 推送後驗證 remote HEAD |
 | Knowledge Google Drive | 全域 `core_rule.md` 母檔不變 |
 | Obsidian | 本次詳細收工紀錄寫入第二大腦 Projects |
 
 ## 最後更新
 
-- 時間：2026-07-22 22:50 +08:00
+- 時間：2026-07-22 22:57 +08:00
 - 更新者：Codex @ TZNB1169
