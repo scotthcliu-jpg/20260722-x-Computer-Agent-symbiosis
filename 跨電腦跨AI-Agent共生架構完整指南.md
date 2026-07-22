@@ -421,8 +421,8 @@ Startup 不自動修改、pull、merge、rebase 或 push。
 
 ```json
 {
-  "architecture_version": "1.0.0",
-  "release_id": "agent-sync-v1.0.0",
+  "architecture_version": "1.0.1",
+  "release_id": "agent-sync-v1.0.1",
   "source_repo": "https://github.com/<owner>/<agent-workspace>.git",
   "branch": "main",
   "local_root": "C:\\Users\\<user>\\Documents\\AI-Workspace",
@@ -819,8 +819,8 @@ gh auth status
 | Obsidian 第二大腦 | `G:\我的雲端硬碟\第二大腦` |
 | Agent workspace repo | `scotthcliu-jpg/my-agent-2026` |
 | Chezmoi repo | `scotthcliu-jpg/ai-agent-dotfiles` |
-| 架構 commit | `9bdc2e349687b64bdcb1c8bddecadb4df63eb528` |
-| Release tag | `agent-sync-v1.0.0` |
+| 架構 commit | `97b92d2d1ffed0c65d0ebd6b3e24fd314f4a1be8` |
+| Release tag | `agent-sync-v1.0.1` |
 | Chezmoi commit | `a129da27f0d6bd7fafca375f45d230cdef5346c3` |
 | core rule hash | `ba2258d2f2dbd51586765da8071d12d04fca88be0d607f2b42adf039aa331438` |
 | Skills tree hash | `f43dbc0c3e8eab6b06c5f1af71f05e26975e53304988f88993c4cd9b111e70cb` |
