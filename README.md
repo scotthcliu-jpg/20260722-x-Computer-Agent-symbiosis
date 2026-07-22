@@ -14,6 +14,10 @@
 | `data/` | Source data files |
 | `pages/` | HTML reports |
 
+## Architecture Guide
+
+- [跨電腦、跨 AI Agent 共生架構完整指南](./跨電腦跨AI-Agent共生架構完整指南.md)
+
 ## Source
 
 Local path: `2026Claude\100_Todo\projects\active\20260714Antigravity-symbiosys\`
