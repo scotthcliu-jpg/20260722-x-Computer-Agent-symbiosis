@@ -1,26 +1,54 @@
-# HANDOFF.md
+# HANDOFF
 
-## 最新交接
+## 目前做到哪
 
-- 專案：20260722-x-Computer-Agent-symbiosis
-- 更新時間：2026-07-22
-- 更新者：Codex @ Scott Windows
-- 狀態：公開架構指南已發布，repo 已更名並改為 public。
+已完成跨電腦、跨 AI Agent 共生架構指南，GitHub repo 已更名為 `20260722-x-Computer-Agent-symbiosis` 並公開。舊本機來源與專用同步腳本也已調整為新 repo 識別，避免未來同步覆蓋回舊名稱。
 
-## 目前進度
+## 目前狀態
 
-- 專案目標：驗證 Codex、Claude、Antigravity、OpenCode 跨 AI / 跨電腦協作 SOP。
-- `PROJECT.md` 已記錄新 GitHub repo：`scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis`。
-- 目前重點：延續 Antigravity 實機驗證與跨工具同步測試。
+- clean，等待本次收工 commit、push 與最終 remote HEAD 驗證。
 
-## 下次開工
+## 接手狀態
 
-1. 先讀 `PROJECT.md` 確認實驗目標、已完成項目、待驗證項目。
-2. 檢查本機 Git 狀態與遠端同步狀態。
-3. 繼續驗證不同 AI 是否能讀取 `PROJECT.md`、`HANDOFF.md`、`AGENTS.md`、`CLAUDE.md`。
-4. 收工時更新 `PROJECT.md`、`HANDOFF.md`、GitHub，並把詳細紀錄寫入 Obsidian 第二大腦。
+- handoff_ready: yes
+- session start commit: `536f689733847bbde582718f3fdf820e60e979fe`
+- expected branch: `main`
+- expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
+- last sync verification: `2026-07-22 22:50 +08:00`，本次收工最終 commit 以 GitHub remote HEAD 為準
+- last updater: `Codex @ TZNB1169`
+- next Agent rule: 可接手，但開工仍須先執行唯讀 startup 並確認 local HEAD 等於 remote HEAD
+
+## 本次完成
+
+1. 完成 843 行的跨電腦、跨 AI Agent 共生架構完整指南。
+2. 說明本機 NTFS、Obsidian、Git／GitHub、Google Drive 四層定位與 SSOT 邊界。
+3. 說明 `project-init-sync`、`project-startup`、`project-wrapup`、`sync-health` 四個 Skills。
+4. Repo 改為 public 並更名為 `20260722-x-Computer-Agent-symbiosis`。
+5. README、PROJECT、HANDOFF 與舊同步腳本已對齊新 repo 名稱。
+
+## 下一步
+
+1. 在第二台 Windows 電腦依公開指南完成一次部署。
+2. 依序使用另一個 Agent 執行 `project-startup`、唯讀 `sync-health` 與一次完整 `project-wrapup`。
+3. 觀察至少 7 天或完成兩次跨電腦／跨 Agent 接力後，再評估移除 legacy junction 與舊來源。
 
 ## 注意事項
 
-- Antigravity 的全域 Skills 載入方式尚未確認，因此本專案以專案根目錄文件交接為主。
-- 不要把工具驗證結果只留在對話中，必須落地到專案文件。
+- 舊本機來源資料夾仍名為 `20260714Antigravity-symbiosys`，這是 legacy path，不代表 GitHub repo 仍使用舊名稱。
+- 不要在不同 Agent 或電腦上同時修改 `main`。
+- 禁止自動 rebase、merge、force push 或 destructive reset。
+- `handoff_ready: yes` 不取代開工時的 GitHub remote HEAD 驗證。
+
+## 同步狀態
+
+| 角色 | 狀態 |
+|---|---|
+| Execution 本機 NTFS | clean，使用專用本機 clone |
+| Version GitHub | public repo；本次收工後驗證 remote HEAD |
+| Knowledge Google Drive | 全域 `core_rule.md` 母檔不變 |
+| Obsidian | 本次詳細收工紀錄寫入第二大腦 Projects |
+
+## 最後更新
+
+- 時間：2026-07-22 22:50 +08:00
+- 更新者：Codex @ TZNB1169

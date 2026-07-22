@@ -3,7 +3,7 @@
 **建立日期**：2026-07-14  
 **最後更新**：2026-07-22
 **GitHub Repo**：[scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis](https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis)（public）
-**狀態**：進行中 — 已完成專案記憶初始化與 GitHub 備份 SOP，正在進行 Antigravity 實機重驗
+**狀態**：公開指南已發布 — 跨電腦／跨 AI Agent 四層架構、四個核心 Skills 與部署 SOP 已完成，進入實機接力驗證階段
 
 ---
 
