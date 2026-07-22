@@ -1,15 +1,15 @@
-# 20260714Antigravity-symbiosys
+# 20260722-x-Computer-Agent-symbiosis
 
 **建立日期**：2026-07-14  
-**最後更新**：2026-07-14  
-**GitHub Repo**：[scotthcliu-jpg/20260714Antigravity-symbiosys](https://github.com/scotthcliu-jpg/20260714Antigravity-symbiosys)（private）  
+**最後更新**：2026-07-22
+**GitHub Repo**：[scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis](https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis)（public）
 **狀態**：進行中 — 已完成專案記憶初始化與 GitHub 備份 SOP，正在進行 Antigravity 實機重驗
 
 ---
 
 ## 專案概述
 
-本專案旨在驗證與執行「Codex x Claude x Antigravity x OpenCode Symbiosis SOP」在 Antigravity 大腦環境下的實際部署。藉由建立獨立的專案工作區 `20260714Antigravity-symbiosys`，確認多工具 AI 大腦如何共享規則、記憶、技能與 Git 備份工作流，並在 Antigravity 實機中完成完整的引導與體檢流程。
+本專案旨在驗證與發布「Codex x Claude x ChatGPT x Antigravity x OpenCode Symbiosis SOP」，確認多工具 AI 大腦如何共享規則、記憶、技能與 Git 接力工作流。原始本機工作資料夾仍保留名稱 `20260714Antigravity-symbiosys`，GitHub 公開 repo 已於 2026-07-22 更名為 `20260722-x-Computer-Agent-symbiosis`。
 
 ---
 
@@ -39,7 +39,7 @@
 - 執行 `powershell -NoProfile -File 000_Agent/scripts/sync_core_rules.ps1`，確認 `CLAUDE.md` 與 `AGENTS.md` 規則一致且已是最新狀態。
 
 ### Step 5：GitHub 自動備份 SOP（✅ 已完成）
-- 執行 `new_project_github_setup.ps1` 建立私有倉庫 [scotthcliu-jpg/20260714Antigravity-symbiosys](https://github.com/scotthcliu-jpg/20260714Antigravity-symbiosys)。
+- 執行 `new_project_github_setup.ps1` 建立初始私有倉庫；2026-07-22 更名並公開為 [scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis](https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis)。
 - 產生本專案專屬備份腳本 `000_Agent/scripts/sync_20260714Antigravity_symbiosys_to_github.ps1`。
 - 在全域 `000_Agent/scripts/sync-map.conf` 註冊本專案路徑。
 - 順利執行首度備份，成功將 `README.md` 推送至 GitHub。
@@ -50,6 +50,10 @@
 ---
 
 ## 工作紀錄
+
+### 2026-07-22
+- 新增跨電腦、跨 AI Agent 共生架構完整指南。
+- GitHub repo 更名為 `20260722-x-Computer-Agent-symbiosis` 並改為 public。
 
 ### 2026-07-14
 - 啟動 Session，偵測到專案為空且無 `000_Agent/memory/`。

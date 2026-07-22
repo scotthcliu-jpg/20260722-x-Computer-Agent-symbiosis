@@ -1,6 +1,6 @@
-# 20260714Antigravity-symbiosys - Internal Working Repo
+# 20260722-x-Computer-Agent-symbiosis
 
-> Private repo. Synced from local 2026Claude working directory.
+> Public reference repo for building a cross-computer, cross-AI Agent symbiosis architecture.
 
 ## Structure
 
@@ -20,7 +20,7 @@
 
 ## Source
 
-Local path: `2026Claude\100_Todo\projects\active\20260714Antigravity-symbiosys\`
+Legacy source path: `2026Claude\100_Todo\projects\active\20260714Antigravity-symbiosys\`
 
 > Synced via `000_Agent\scripts\sync_20260714Antigravity_symbiosys_to_github.ps1`
 

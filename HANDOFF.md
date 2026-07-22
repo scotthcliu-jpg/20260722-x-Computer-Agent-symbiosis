@@ -2,15 +2,15 @@
 
 ## 最新交接
 
-- 專案：20260714Antigravity-symbiosys
-- 更新時間：2026-07-21 16:14
+- 專案：20260722-x-Computer-Agent-symbiosis
+- 更新時間：2026-07-22
 - 更新者：Codex @ Scott Windows
-- 狀態：已補建 `HANDOFF.md`、`AGENTS.md`、`CLAUDE.md`，既有 `PROJECT.md` 保留不覆蓋。
+- 狀態：公開架構指南已發布，repo 已更名並改為 public。
 
 ## 目前進度
 
 - 專案目標：驗證 Codex、Claude、Antigravity、OpenCode 跨 AI / 跨電腦協作 SOP。
-- 既有 `PROJECT.md` 已記錄 GitHub repo：`scotthcliu-jpg/20260714Antigravity-symbiosys`。
+- `PROJECT.md` 已記錄新 GitHub repo：`scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis`。
 - 目前重點：延續 Antigravity 實機驗證與跨工具同步測試。
 
 ## 下次開工
