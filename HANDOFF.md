@@ -6,18 +6,18 @@
 
 ## 目前狀態
 
-- 已建立正式本機 NTFS clone，正進行 Claude workspace 遷移；完成最終 push 與 remote HEAD 驗證前禁止其他 Agent 修改。
+- 正式本機 NTFS clone 已建立，Claude workspace 遷移與架構 `agent-sync-v1.1.0` 驗證均已完成。
 
 ## 接手狀態
 
-- handoff_ready: no
+- handoff_ready: yes
 - session start commit: `7b974e4baad962cbf656722a2cad6dedc3f7b368`
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: `pending`
+- last sync verification: `2026-07-23 22:23 +08:00`；migration commit `5f8c1f43b737c6dbb6173a5a70a061f36642ccc1` 已確認 local HEAD = remote HEAD
 - last updater: `Codex @ TZNB1169`
-- next Agent rule: Claude workspace 遷移尚未完成，禁止開始修改；等待最終 commit、push 與 remote HEAD 驗證。
+- next Agent rule: 可接手，但必須先在本機 NTFS 路徑執行唯讀 `project-startup`；任何閘門失敗即停止。
 
 ## 本次完成
 
