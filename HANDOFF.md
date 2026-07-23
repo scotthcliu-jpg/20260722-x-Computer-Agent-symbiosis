@@ -2,21 +2,22 @@
 
 ## 目前做到哪
 
-已完成跨電腦、跨 AI Agent 共生架構指南，GitHub repo 已更名為 `20260722-x-Computer-Agent-symbiosis` 並公開。舊本機來源與專用同步腳本已調整為新 repo 識別；參考架構已發布 `agent-sync-v1.0.1`，完整 `sync-health` 稽核通過。
+已完成跨電腦、跨 AI Agent 共生架構指南，正式本機 checkout 已移至 `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`；參考架構已升級為 `agent-sync-v1.1.0`，舊 `project-kickoff` 已移除。
 
 ## 目前狀態
 
-- 收工檢核已通過，`handoff_ready: yes`；最終 HANDOFF commit 推送後由 remote HEAD 驗證接手版本。
+- 已建立正式本機 NTFS clone，正進行 Claude workspace 遷移；完成最終 push 與 remote HEAD 驗證前禁止其他 Agent 修改。
 
 ## 接手狀態
 
-- handoff_ready: yes
-- session start commit: `536f689733847bbde582718f3fdf820e60e979fe`
+- handoff_ready: no
+- session start commit: `7b974e4baad962cbf656722a2cad6dedc3f7b368`
+- expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: `2026-07-22 22:57 +08:00`，本次收工最終 commit 以 GitHub remote HEAD 為準
+- last sync verification: `pending`
 - last updater: `Codex @ TZNB1169`
-- next Agent rule: 可接手，但開工仍須先執行唯讀 startup 並確認 local HEAD 等於 remote HEAD
+- next Agent rule: Claude workspace 遷移尚未完成，禁止開始修改；等待最終 commit、push 與 remote HEAD 驗證。
 
 ## 本次完成
 

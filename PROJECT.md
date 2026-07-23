@@ -1,5 +1,17 @@
 # 20260722-x-Computer-Agent-symbiosis
 
+## 架構定位（2026-07-23）
+
+| 角色 | 正式位置 |
+|---|---|
+| Execution 本機 NTFS | `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis` |
+| Version Git root | `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis` |
+| Version GitHub | `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git` |
+| 預設 branch | `main` |
+| 獨立 repo | `yes` |
+| Knowledge／legacy source | `G:\我的雲端硬碟\2026Claude\100_Todo\projects\active\20260714Antigravity-symbiosys`（唯讀，不作為 Agent workspace） |
+| 架構 release | `agent-sync-v1.1.0` |
+
 **建立日期**：2026-07-14  
 **最後更新**：2026-07-22
 **GitHub Repo**：[scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis](https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis)（public）

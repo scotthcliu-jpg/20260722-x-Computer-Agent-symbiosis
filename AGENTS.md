@@ -1,5 +1,13 @@
 # AGENTS.md
 
+## 執行位置閘門（優先規則）
+
+- 唯一可編輯與執行的專案路徑：`C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`。
+- Version Git root：`C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`；remote：`https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`；branch：`main`。
+- Google Drive 專案路徑只作為 Knowledge／legacy source；禁止在 G 槽編輯、測試、建立 Git repo 或 commit。
+- 「開工／接續」一律使用 `project-startup`；舊 `project-kickoff` 已刪除。
+- `handoff_ready` 不是 `yes`、工作樹不乾淨或 local HEAD 不等於 remote HEAD 時，必須停止並回報 `blocked`。
+
 ## 啟動順序
 
 1. 先讀 `PROJECT.md`，取得專案目標、背景、路徑、GitHub repo、重要決策。
