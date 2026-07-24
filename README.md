@@ -17,6 +17,11 @@
 ## Architecture Guide
 
 - [跨電腦、跨 AI Agent 共生架構完整指南](./跨電腦跨AI-Agent共生架構完整指南.md)
+- [20260722-20260724 架構討論白話 Q&A](./docs/20260722-20260724-跨電腦跨AI-Agents架構對話Q&A.md)
+
+## Continuous Improvement
+
+後續將以完整指南作為制度基準，以對話 Q&A 保存實際使用問題、判斷理由與改善需求，再由單一 Migration Owner 發布新的 `agent-sync` release。
 
 ## Source
 
@@ -24,4 +29,4 @@ Legacy source path: `2026Claude\100_Todo\projects\active\20260714Antigravity-sym
 
 > Synced via `000_Agent\scripts\sync_20260714Antigravity_symbiosys_to_github.ps1`
 
-Last synced: 2026-07-21
+Last synced: 2026-07-24

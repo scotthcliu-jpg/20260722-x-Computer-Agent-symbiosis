@@ -2,37 +2,36 @@
 
 ## 目前做到哪
 
-已完成跨電腦、跨 AI Agent 共生架構指南，正式本機 checkout 已移至 `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`；參考架構已升級為 `agent-sync-v1.1.0`，舊 `project-kickoff` 已移除。
+已將 2026-07-22 至 2026-07-24 的架構討論整理為 33 組白話 Q&A 並加入本專案，README 與 PROJECT 已建立後續持續改善入口。
 
 ## 目前狀態
 
-- 正式本機 NTFS clone 已建立，Claude workspace 遷移與架構 `agent-sync-v1.1.0` 驗證均已完成。
+- 目標 repo 工作樹與 GitHub 在本次開工時完全同步；架構 release、核心規則與 Skills hash 均正確。
+- 全域 `sync-health` 目前因另一個南京行程檔案存在未提交修改而回報 FAIL；該異動未被本次處理或納入本專案。
 
 ## 接手狀態
 
-- handoff_ready: yes
-- session start commit: `7b974e4baad962cbf656722a2cad6dedc3f7b368`
+- handoff_ready: no
+- session start commit: `7d9015aea92722860fba65dfc8f84126a6267c6b`
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: `2026-07-23 22:23 +08:00`；migration commit `5f8c1f43b737c6dbb6173a5a70a061f36642ccc1` 已確認 local HEAD = remote HEAD
+- last sync verification: `2026-07-24 11:32 +08:00`；開工 commit `7d9015aea92722860fba65dfc8f84126a6267c6b` 已確認 local HEAD = remote HEAD
 - last updater: `Codex @ TZNB1169`
-- next Agent rule: 可接手，但必須先在本機 NTFS 路徑執行唯讀 `project-startup`；任何閘門失敗即停止。
+- next Agent rule: 必須先處理或正式收工 `my-agent-2026` 中的南京行程未提交修改，讓完整 `sync-health` 恢復 PASS；在此之前禁止開始新的架構修改。
 
 ## 本次完成
 
-1. 完成 843 行的跨電腦、跨 AI Agent 共生架構完整指南。
-2. 說明本機 NTFS、Obsidian、Git／GitHub、Google Drive 四層定位與 SSOT 邊界。
-3. 說明 `project-init-sync`、`project-startup`、`project-wrapup`、`sync-health` 四個 Skills。
-4. Repo 改為 public 並更名為 `20260722-x-Computer-Agent-symbiosis`。
-5. README、PROJECT、HANDOFF 與舊同步腳本已對齊新 repo 名稱。
-6. 修正 Windows Git root 驗證誤判，發布 `agent-sync-v1.0.1`；完整稽核結果為 0 failures、0 warnings。
+1. 新增 `docs/20260722-20260724-跨電腦跨AI-Agents架構對話Q&A.md`。
+2. 依討論順序保存 33 組白話 Q&A，作為後續優化 AI Agent 工作環境的學習基礎。
+3. README 新增 Q&A 導覽與持續改善方式。
+4. PROJECT 更新目前狀態與 2026-07-24 工作紀錄。
 
 ## 下一步
 
-1. 在第二台 Windows 電腦依公開指南完成一次部署。
-2. 依序使用另一個 Agent 執行 `project-startup`、唯讀 `sync-health` 與一次完整 `project-wrapup`。
-3. 觀察至少 7 天或完成兩次跨電腦／跨 Agent 接力後，再評估移除 legacy junction 與舊來源。
+1. 確認 `my-agent-2026` 中 `2607南京用友出行/2026-07-08_南京行程.html` 的修改歸屬並完成該專案收工，或由檔案擁有人決定處理方式。
+2. 重新執行 `sync-health -Agent Codex`，必須恢復 PASS。
+3. 再依 Q&A 收集實機問題，由單一 Migration Owner 規劃下一個 `agent-sync` release。
 
 ## 注意事項
 
@@ -40,17 +39,18 @@
 - 不要在不同 Agent 或電腦上同時修改 `main`。
 - 禁止自動 rebase、merge、force push 或 destructive reset。
 - `handoff_ready: yes` 不取代開工時的 GitHub remote HEAD 驗證。
+- 不可擅自提交或還原南京行程的未提交修改；它屬於另一個工作內容。
 
 ## 同步狀態
 
 | 角色 | 狀態 |
 |---|---|
-| Execution 本機 NTFS | clean，使用專用本機 clone |
-| Version GitHub | public repo；最終 HANDOFF commit 推送後驗證 remote HEAD |
+| Execution 本機 NTFS | 本專案內容待 commit；未混入南京行程修改 |
+| Version GitHub | 本次內容待 commit、push 與 remote HEAD 驗證 |
 | Knowledge Google Drive | 全域 `core_rule.md` 母檔不變 |
-| Obsidian | 本次詳細收工紀錄寫入第二大腦 Projects |
+| Obsidian | 待更新第二大腦 Projects 專案索引 |
 
 ## 最後更新
 
-- 時間：2026-07-22 22:57 +08:00
+- 時間：2026-07-24 11:34 +08:00
 - 更新者：Codex @ TZNB1169

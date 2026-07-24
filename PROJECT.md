@@ -13,9 +13,9 @@
 | 架構 release | `agent-sync-v1.1.0` |
 
 **建立日期**：2026-07-14  
-**最後更新**：2026-07-22
+**最後更新**：2026-07-24
 **GitHub Repo**：[scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis](https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis)（public）
-**狀態**：公開指南已發布 — 跨電腦／跨 AI Agent 四層架構、四個核心 Skills 與部署 SOP 已完成，進入實機接力驗證階段
+**狀態**：公開指南與 2026-07-22 至 2026-07-24 對話 Q&A 已發布；後續以實機接力結果持續優化 AI Agent 工作環境
 
 ---
 
@@ -62,6 +62,11 @@
 ---
 
 ## 工作紀錄
+
+### 2026-07-24
+- 將 2026-07-22 至 2026-07-24 的完整架構討論整理為 33 組白話 Q&A，納入 `docs/20260722-20260724-跨電腦跨AI-Agents架構對話Q&A.md`。
+- Q&A 涵蓋 Workspace、SSOT、Google Drive／Obsidian／GitHub 分工、四個 Skills、HEAD／hash／HANDOFF、Claude 遷移與 `agent-sync-v1.1.0`。
+- 確立後續改善方式：完整指南保存正式制度，Q&A 保存實務問題與判斷，再由單一 Migration Owner 發布架構升版。
 
 ### 2026-07-22
 - 新增跨電腦、跨 AI Agent 共生架構完整指南。
