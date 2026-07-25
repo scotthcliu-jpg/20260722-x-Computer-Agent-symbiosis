@@ -1,0 +1,13 @@
+#!/bin/sh
+# agent-sync-project-pre-commit-version: 1.2.0
+set -eu
+
+staged="$(git diff --cached --name-only --diff-filter=ACMR)"
+[ -z "$staged" ] && exit 0
+
+if printf '%s\n' "$staged" | grep -Eiq '(^|/)(\.env|auth\.json|credentials?\.|.*secret.*|.*api[_-]?key.*|.*(access|refresh)[_-]?token.*|sessions?/|cache/|history/|telemetry/)'; then
+  echo "[pre-commit] Blocked sensitive runtime, credential, or cache path." >&2
+  exit 1
+fi
+
+printf '%s\n' "$staged" | sed 's/^/[pre-commit] staged: /'

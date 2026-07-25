@@ -11,7 +11,7 @@
 
 ## 接手狀態
 
-- handoff_ready: no
+- handoff_ready: yes
 - session start commit: `7d9015aea92722860fba65dfc8f84126a6267c6b`
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`

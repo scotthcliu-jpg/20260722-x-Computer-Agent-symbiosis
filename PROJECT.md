@@ -10,7 +10,7 @@
 | 預設 branch | `main` |
 | 獨立 repo | `yes` |
 | Knowledge／legacy source | `G:\我的雲端硬碟\2026Claude\100_Todo\projects\active\20260714Antigravity-symbiosys`（唯讀，不作為 Agent workspace） |
-| 架構 release | `agent-sync-v1.1.0` |
+| 架構 release | `agent-sync-v1.2.0` |
 
 **建立日期**：2026-07-14  
 **最後更新**：2026-07-24
