@@ -1,55 +1,42 @@
 # HANDOFF
 
-## 目前做到哪
+## 本次收工摘要
 
-已完成 HTML 網頁佈建規則圖卡、全域發布決策與本專案文件更新；2026-07-26 已移除錯指「朝聖之路」的 `.netlify/state.json`，本架構專案不再保留 Netlify site link。
+2026-07-26 主 session 已完成三組圖卡與再生成規格的整理：HTML 佈建規則、agent-sync v1.2.0，以及四個 AI Agent 的短、中、長期記憶架構。正式資產均已納入本專案。
 
 ## 目前狀態
 
-- 目標 repo 工作樹與 GitHub 在本次開工時完全同步；架構 release、核心規則與 Skills hash 均正確。
-- 全域 `sync-health` 目前因另一個南京行程檔案存在未提交修改而回報 FAIL；該異動未被本次處理或納入本專案。
+- 專案 Git root、branch 與 remote 均符合 `PROJECT.md`。
+- 收工前已確認 `main` 的 local HEAD 與 `origin/main` 相同；本次交接文件待本次 commit 推送後再次驗證。
 
-## 接手狀態
+## 交接資訊
 
 - handoff_ready: yes
-- session start commit: `54811ee18a431b3721210ffcc74f512f2c37fc11`
+- session start commit: `c83ce7d50b4a5cf69dacf8c7750964d3e5b7abbe`
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: `2026-07-26 +08:00`；HTML 發布規則圖卡 commit `70d6eec481d7831266d518051860b3a104eb11cf` 已確認 local HEAD = GitHub remote HEAD；全域規則 commit 為 `1e74318`。
+- last sync verification: `2026-07-26 20:33 +08:00`（收工文件 commit 前，local HEAD = origin/main）
 - last updater: `Codex @ TZNB1169`
-- next Agent rule: GitHub remote HEAD 驗證完成後，可依 `docs/images/agent-sync-v1.2.0/README.md` 使用或更新圖卡；全域 `sync-health` 的南京行程未提交修改仍須由其擁有人處理。
-
-## 本次完成
-
-1. 新增 HTML 發布標準：公開靜態 HTML 預設 GitHub Pages；Cloudflare Pages、Netlify 與 Google Sites 各有明確例外定位。
-2. 更新全域 `core_rule.md`，並同步至全域 `AGENTS.md`／`CLAUDE.md` 的核心規則區塊。
-3. 新增 `docs/images/html-deployment-rules/01-html-deployment-rules.png` 與 README，保存 GPT Image 2 再生成規格。
-4. README 與 PROJECT 新增圖卡入口和決策紀錄。
+- next Agent rule: 可先以 `project-startup` 進行唯讀檢查；若工作樹不乾淨、`handoff_ready` 非 yes 或 local HEAD 不等於 remote HEAD，必須停止並協調。
 
 ## 下一步
 
-1. 架構規則升版時，依 `docs/images/agent-sync-v1.2.0/README.md` 與 `docs/images/html-deployment-rules/README.md` 同步更新受影響圖卡。
-2. 重新執行 `sync-health -Agent Codex`，待南京行程未提交修改完成歸屬處理後恢復 PASS。
+1. 若有新的公開 HTML，依 `docs/images/html-deployment-rules/README.md` 選擇並執行發布路徑。
+2. 在第二台 Windows 電腦以另一個 Agent 跑一次 `project-startup` 與收工接力驗證。
+3. 若跨專案共用規則有異動，先確認 Migration Owner，再發布新的架構 release。
 
 ## 注意事項
 
-- 舊本機來源資料夾仍名為 `20260714Antigravity-symbiosys`，這是 legacy path，不代表 GitHub repo 仍使用舊名稱。
-- 不要在不同 Agent 或電腦上同時修改 `main`。
-- 禁止自動 rebase、merge、force push 或 destructive reset。
-- `handoff_ready: yes` 不取代開工時的 GitHub remote HEAD 驗證。
-- 不可擅自提交或還原南京行程的未提交修改；它屬於另一個工作內容。
+- Google Drive 是 Knowledge／legacy source，禁止在 G 槽編輯、測試、建立 Git repo 或 commit。
+- 不可自動 rebase、merge、force push 或 destructive reset。
+- 公開 repo 不得提交 token、session、cache、私人 Obsidian 內容或其他敏感資料。
 
 ## 同步狀態
 
-| 角色 | 狀態 |
+| 層級 | 狀態 |
 |---|---|
-| Execution 本機 NTFS | HTML 發布規則圖卡、再生成規格與專案文件已完成 |
-| Version GitHub | commit `70d6eec` 已 push，且已驗證 local HEAD = remote HEAD |
-| Knowledge Google Drive | 全域 `core_rule.md` 的正式本機來源已更新並推送；Google Drive 同步由桌面同步機制處理 |
-| Obsidian | 此次未直接修改 Google Drive vault；正式 PNG 與規則來源已由 GitHub／全域規則 repo 保存 |
-
-## 最後更新
-
-- 時間：2026-07-26 +08:00
-- 更新者：Codex @ TZNB1169
+| Execution NTFS | 收工文件已更新 |
+| Version GitHub | 本次 commit、push 與 remote HEAD 複核待完成 |
+| Knowledge Google Drive | 本次未變更正式資料 |
+| Obsidian | 詳細收工紀錄已更新 |
