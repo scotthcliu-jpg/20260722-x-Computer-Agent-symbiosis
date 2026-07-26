@@ -16,7 +16,7 @@
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: 本次 commit、push 與 remote HEAD 驗證待完成
+- last sync verification: `2026-07-26 +08:00`；圖卡資產 commit `257a8a23ff25aa95a6097ee401c9423218e87d29` 已確認 local HEAD = GitHub remote HEAD。本檔案的最終交接提交將於本次收工結果再次驗證。
 - last updater: `Codex @ TZNB1169`
 - next Agent rule: GitHub remote HEAD 驗證完成後，可依 `docs/images/agent-sync-v1.2.0/README.md` 使用或更新圖卡；全域 `sync-health` 的南京行程未提交修改仍須由其擁有人處理。
 
@@ -48,7 +48,7 @@
 | 角色 | 狀態 |
 |---|---|
 | Execution 本機 NTFS | 三張圖卡、再生成規格與專案文件已更新，待本次 commit |
-| Version GitHub | 待本次 commit、push 與 remote HEAD 驗證 |
+| Version GitHub | 圖卡資產 commit `257a8a2` 已 push 且已驗證；本檔案最終交接提交待本次收工再次驗證 |
 | Knowledge Google Drive | 全域 `core_rule.md` 母檔不變 |
 | Obsidian | 第二大腦 Projects 專案索引已更新圖卡入口與分工決策 |
 
