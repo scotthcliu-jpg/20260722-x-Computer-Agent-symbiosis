@@ -2,7 +2,7 @@
 
 ## 目前做到哪
 
-已將三張 `agent-sync-v1.2.0` 新手圖卡、用途與再生成規格納入 `docs/images/agent-sync-v1.2.0/`，並更新 README、PROJECT 與 Obsidian 索引。GitHub 推送與 remote HEAD 驗證待本次 commit 完成。
+已將 HTML 網頁佈建規則圖卡與再生成規格納入 `docs/images/html-deployment-rules/`，並將發布決策同步至全域 `core_rule.md`、全域 Agent 規則與本專案文件。GitHub 推送與 remote HEAD 驗證待本次 commit 完成。
 
 ## 目前狀態
 
@@ -22,18 +22,15 @@
 
 ## 本次完成
 
-1. 新增 `docs/20260722-20260724-跨電腦跨AI-Agents架構對話Q&A.md`。
-2. 依討論順序保存 33 組白話 Q&A，作為後續優化 AI Agent 工作環境的學習基礎。
-3. README 新增 Q&A 導覽與持續改善方式。
-4. PROJECT 更新目前狀態與 2026-07-24 工作紀錄。
-5. 新增三張 `agent-sync-v1.2.0` 圖卡與 `docs/images/agent-sync-v1.2.0/README.md` 再生成規格。
-6. README 加入視覺教材入口；PROJECT 與 Obsidian 索引記錄正式版本來源與改版原則。
+1. 新增 HTML 發布標準：公開靜態 HTML 預設 GitHub Pages；Cloudflare Pages、Netlify 與 Google Sites 各有明確例外定位。
+2. 更新全域 `core_rule.md`，並同步至全域 `AGENTS.md`／`CLAUDE.md` 的核心規則區塊。
+3. 新增 `docs/images/html-deployment-rules/01-html-deployment-rules.png` 與 README，保存 GPT Image 2 再生成規格。
+4. README 與 PROJECT 新增圖卡入口和決策紀錄。
 
 ## 下一步
 
-1. 確認 `my-agent-2026` 中 `2607南京用友出行/2026-07-08_南京行程.html` 的修改歸屬並完成該專案收工，或由檔案擁有人決定處理方式。
-2. 重新執行 `sync-health -Agent Codex`，必須恢復 PASS。
-3. 架構規則升版時，依 `docs/images/agent-sync-v1.2.0/README.md` 同步更新受影響圖卡。
+1. 架構規則升版時，依 `docs/images/agent-sync-v1.2.0/README.md` 與 `docs/images/html-deployment-rules/README.md` 同步更新受影響圖卡。
+2. 重新執行 `sync-health -Agent Codex`，待南京行程未提交修改完成歸屬處理後恢復 PASS。
 
 ## 注意事項
 
@@ -47,10 +44,10 @@
 
 | 角色 | 狀態 |
 |---|---|
-| Execution 本機 NTFS | 三張圖卡、再生成規格與專案文件已更新，待本次 commit |
-| Version GitHub | 圖卡資產 commit `257a8a2` 已 push 且已驗證；本檔案最終交接提交待本次收工再次驗證 |
-| Knowledge Google Drive | 全域 `core_rule.md` 母檔不變 |
-| Obsidian | 第二大腦 Projects 專案索引已更新圖卡入口與分工決策 |
+| Execution 本機 NTFS | HTML 發布規則圖卡、再生成規格與專案文件已更新，待本次 commit |
+| Version GitHub | 本次圖卡與文件提交待 push 與 remote HEAD 驗證 |
+| Knowledge Google Drive | 全域 `core_rule.md` 已加入 HTML 發布決策規則，待雲端同步 |
+| Obsidian | 待補入第二大腦 Projects 專案索引的圖卡入口與分工決策 |
 
 ## 最後更新
 

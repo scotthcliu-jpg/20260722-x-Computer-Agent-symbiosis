@@ -23,6 +23,7 @@
 ## 視覺教材
 
 - [agent-sync v1.2.0 新手圖卡：時間軸、四份文件與同步流程](./docs/images/agent-sync-v1.2.0/README.md)
+- [HTML 網頁佈建規則圖卡：GitHub Pages、Cloudflare Pages、Netlify、Google Sites](./docs/images/html-deployment-rules/README.md)
 
 ## Continuous Improvement
 

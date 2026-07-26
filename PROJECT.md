@@ -64,6 +64,10 @@
 ## 工作紀錄
 
 ### 2026-07-26
+- 將公開 HTML 發布決策標準化為全域規則：公開靜態 HTML 預設 `main/docs` → GitHub Pages；需求升級採 Cloudflare Pages；表單、私有原始碼公開展示或特殊重導採 Netlify；Google Sites 作導覽入口。
+- 建立 `docs/images/html-deployment-rules/01-html-deployment-rules.png` 與再生成規格，作為正式可版本化圖卡。
+
+### 2026-07-26
 - 建立 `docs/images/agent-sync-v1.2.0/`，納入三張繁體中文新手圖卡：架構時間軸、四份 canonical files 定位、專案圖卡同步流程。
 - 同資料夾新增 `README.md`，記錄每張圖的用途、更新時機、`gpt-image-2` 再生成規格與新主機還原原則。
 - 確立圖卡版本來源：GitHub／本機專案保存正式 PNG 與規格；Google Drive 不建立第二個可編輯圖片庫；Obsidian 僅保存索引與改版決策。
