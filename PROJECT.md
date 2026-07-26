@@ -63,6 +63,11 @@
 
 ## 工作紀錄
 
+### 2026-07-26
+- 建立 `docs/images/agent-sync-v1.2.0/`，納入三張繁體中文新手圖卡：架構時間軸、四份 canonical files 定位、專案圖卡同步流程。
+- 同資料夾新增 `README.md`，記錄每張圖的用途、更新時機、`gpt-image-2` 再生成規格與新主機還原原則。
+- 確立圖卡版本來源：GitHub／本機專案保存正式 PNG 與規格；Google Drive 不建立第二個可編輯圖片庫；Obsidian 僅保存索引與改版決策。
+
 ### 2026-07-24
 - 將 2026-07-22 至 2026-07-24 的完整架構討論整理為 33 組白話 Q&A，納入 `docs/20260722-20260724-跨電腦跨AI-Agents架構對話Q&A.md`。
 - Q&A 涵蓋 Workspace、SSOT、Google Drive／Obsidian／GitHub 分工、四個 Skills、HEAD／hash／HANDOFF、Claude 遷移與 `agent-sync-v1.1.0`。

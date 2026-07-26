@@ -11,6 +11,7 @@
 | `AGENTS.md` | AI assistant config (Codex), kept in sync with CLAUDE.md |
 | `HANDOFF.md` | Latest cross-agent handoff |
 | `docs/` | Proposals, plans |
+| `docs/images/agent-sync-v1.2.0/` | 正式視覺教材、用途與再生成規格 |
 | `data/` | Source data files |
 | `pages/` | HTML reports |
 
@@ -18,6 +19,10 @@
 
 - [跨電腦、跨 AI Agent 共生架構完整指南](./跨電腦跨AI-Agent共生架構完整指南.md)
 - [20260722-20260724 架構討論白話 Q&A](./docs/20260722-20260724-跨電腦跨AI-Agents架構對話Q&A.md)
+
+## 視覺教材
+
+- [agent-sync v1.2.0 新手圖卡：時間軸、四份文件與同步流程](./docs/images/agent-sync-v1.2.0/README.md)
 
 ## Continuous Improvement
 

@@ -2,7 +2,7 @@
 
 ## 目前做到哪
 
-已將 2026-07-22 至 2026-07-24 的架構討論整理為 33 組白話 Q&A 並加入本專案，README 與 PROJECT 已建立後續持續改善入口。
+已將三張 `agent-sync-v1.2.0` 新手圖卡、用途與再生成規格納入 `docs/images/agent-sync-v1.2.0/`，並更新 README、PROJECT 與 Obsidian 索引。GitHub 推送與 remote HEAD 驗證待本次 commit 完成。
 
 ## 目前狀態
 
@@ -12,13 +12,13 @@
 ## 接手狀態
 
 - handoff_ready: yes
-- session start commit: `7d9015aea92722860fba65dfc8f84126a6267c6b`
+- session start commit: `54811ee18a431b3721210ffcc74f512f2c37fc11`
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: `2026-07-24 11:36 +08:00`；內容 commit `11a4a127ecbee0a5f3e19fee81796a0076d8ee8f` 已確認 local HEAD = remote HEAD，HANDOFF Git blob hash 亦完全相同
+- last sync verification: 本次 commit、push 與 remote HEAD 驗證待完成
 - last updater: `Codex @ TZNB1169`
-- next Agent rule: 必須先處理或正式收工 `my-agent-2026` 中的南京行程未提交修改，讓完整 `sync-health` 恢復 PASS；在此之前禁止開始新的架構修改。
+- next Agent rule: GitHub remote HEAD 驗證完成後，可依 `docs/images/agent-sync-v1.2.0/README.md` 使用或更新圖卡；全域 `sync-health` 的南京行程未提交修改仍須由其擁有人處理。
 
 ## 本次完成
 
@@ -26,12 +26,14 @@
 2. 依討論順序保存 33 組白話 Q&A，作為後續優化 AI Agent 工作環境的學習基礎。
 3. README 新增 Q&A 導覽與持續改善方式。
 4. PROJECT 更新目前狀態與 2026-07-24 工作紀錄。
+5. 新增三張 `agent-sync-v1.2.0` 圖卡與 `docs/images/agent-sync-v1.2.0/README.md` 再生成規格。
+6. README 加入視覺教材入口；PROJECT 與 Obsidian 索引記錄正式版本來源與改版原則。
 
 ## 下一步
 
 1. 確認 `my-agent-2026` 中 `2607南京用友出行/2026-07-08_南京行程.html` 的修改歸屬並完成該專案收工，或由檔案擁有人決定處理方式。
 2. 重新執行 `sync-health -Agent Codex`，必須恢復 PASS。
-3. 再依 Q&A 收集實機問題，由單一 Migration Owner 規劃下一個 `agent-sync` release。
+3. 架構規則升版時，依 `docs/images/agent-sync-v1.2.0/README.md` 同步更新受影響圖卡。
 
 ## 注意事項
 
@@ -45,12 +47,12 @@
 
 | 角色 | 狀態 |
 |---|---|
-| Execution 本機 NTFS | 本專案內容已 commit；未混入南京行程修改 |
-| Version GitHub | 內容 commit `11a4a12` 已 push，且 local HEAD = remote HEAD |
+| Execution 本機 NTFS | 三張圖卡、再生成規格與專案文件已更新，待本次 commit |
+| Version GitHub | 待本次 commit、push 與 remote HEAD 驗證 |
 | Knowledge Google Drive | 全域 `core_rule.md` 母檔不變 |
-| Obsidian | 第二大腦 Projects 專案索引已更新 |
+| Obsidian | 第二大腦 Projects 專案索引已更新圖卡入口與分工決策 |
 
 ## 最後更新
 
-- 時間：2026-07-24 11:36 +08:00
+- 時間：2026-07-26 +08:00
 - 更新者：Codex @ TZNB1169
