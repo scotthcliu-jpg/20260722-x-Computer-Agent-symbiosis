@@ -11,6 +11,7 @@
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
 - main Session 已收齊今日的圖卡、四 Agent 記憶架構、HTML 發布標準化與資料治理交接摘要。
 - 本次新增 Q&A 補充：`docs/2026-07-28-architecture-data-governance-addendum.md`。
+- `sync-health -Agent All` 於 `2026-07-28 21:21 +08:00` 失敗：架構 repo `my-agent-2026` 有未追蹤的 `100_Todo/projects/active/Scott 健康記錄/`；此路徑不屬本專案，本 Session 未修改、未暫存、未忽略。
 - 下一位 Agent 必須先執行 `project-startup`；本次最終 commit 推送與 remote 驗證完成前不得開始寫入。
 
 ## 下一步
@@ -25,6 +26,11 @@
 | Execution | local NTFS 專案；待本次文件 commit 後確認乾淨 |
 | Version | 獨立 GitHub repo；待本次 push 與 remote HEAD 驗證 |
 | Knowledge | Obsidian 專案筆記待本次收工更新 |
+
+## 阻塞處理
+
+- 本專案 GitHub 已在 `465c9959dd98c00f89d52b672b55a018ba849c3c` 與 `origin/main` 一致；但全域健康檢查尚未通過。
+- `Scott 健康記錄/` 的擁有者需決定是否建立其獨立 repo、納入既有專案，或加入適當忽略規則。完成後再執行 `sync-health -Agent All`。
 
 ## 本次收工摘要
 
