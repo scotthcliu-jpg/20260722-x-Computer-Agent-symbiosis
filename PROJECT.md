@@ -1,5 +1,11 @@
 # 20260722-x-Computer-Agent-symbiosis
 
+## 2026-07-28 主 Session 權威補充
+
+- 今日正式收工由本 Session 統一執行；其他 Session 僅回傳交接摘要、重要 Q&A、驗證與待辦。
+- 大量資料採三層分工：Google Drive 保存原始資料、local NTFS Workspace 保存本次分析子集、GitHub 保存程式、資料清冊、雜湊與正式成果。
+- 本次新增的可學習決策見 [資料治理與主 Session 收工補充](docs/2026-07-28-architecture-data-governance-addendum.md)；既有架構 Q&A 保留為歷史主文件。
+
 ## 專案定位
 
 建立並維護跨電腦、跨 AI Agent 的協作架構，讓 Codex、Claude、ChatGPT、Antigravity 與 OpenCode 能以本機 NTFS、GitHub、Obsidian 與 Google Drive 的明確分工安全接力。
