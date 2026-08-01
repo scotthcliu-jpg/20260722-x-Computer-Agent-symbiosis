@@ -8,7 +8,7 @@
 
 ## 主 Session 正式收工中
 
-- handoff_ready: `no`
+- handoff_ready: `yes`
 - session start commit: `fad202cd304325c0d43d9ef46afc89d9defc08d8`
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
