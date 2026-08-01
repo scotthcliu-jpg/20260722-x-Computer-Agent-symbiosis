@@ -19,7 +19,7 @@
 | GitHub | `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git` |
 | Branch | `main` |
 | Knowledge／legacy source | Google Drive 僅供知識與舊資料參考，不可作為執行、Git 或提交位置 |
-| Architecture release | `agent-sync-v1.2.0` |
+| Architecture release | `agent-sync-v1.2.3` |
 
 ## 已確認決策
 
