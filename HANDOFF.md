@@ -1,78 +1,50 @@
 # HANDOFF
 
-## 架構同步（2026-08-01）
+## 目前做到哪
 
-- 已依 `project-init-sync` 對照已驗證架構版本：`agent-sync-v1.2.3`。
-
-> **2026-07-28 權威交接區塊：**本區塊優先於下方保留的歷史內容。
-
-## 主 Session 正式收工中
-
-- handoff_ready: `yes`
-- session start commit: `fad202cd304325c0d43d9ef46afc89d9defc08d8`
-- expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
-- expected branch: `main`
-- expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- main Session 已收齊今日的圖卡、四 Agent 記憶架構、HTML 發布標準化與資料治理交接摘要。
-- 本次新增 Q&A 補充：`docs/2026-07-28-architecture-data-governance-addendum.md`。
-- `sync-health -Agent All` 於 `2026-07-28 21:21 +08:00` 失敗：架構 repo `my-agent-2026` 有未追蹤的 `100_Todo/projects/active/Scott 健康記錄/`；此路徑不屬本專案，本 Session 未修改、未暫存、未忽略。
-- 下一位 Agent 必須先執行 `project-startup`；本次最終 commit 推送與 remote 驗證完成前不得開始寫入。
-
-## 下一步
-
-1. 如需實作大量資料分析，依 Q&A 建立受忽略的 `data/source/` 與可追溯 manifest。
-2. 其他架構變更僅由該 release 的 Migration Owner 處理。
-
-## 層級狀態
-
-| Layer | 狀態 |
-|---|---|
-| Execution | local NTFS 專案；待本次文件 commit 後確認乾淨 |
-| Version | 獨立 GitHub repo；待本次 push 與 remote HEAD 驗證 |
-| Knowledge | Obsidian 專案筆記待本次收工更新 |
-
-## 阻塞處理
-
-- 本專案 GitHub 已在 `465c9959dd98c00f89d52b672b55a018ba849c3c` 與 `origin/main` 一致；但全域健康檢查尚未通過。
-- `Scott 健康記錄/` 的擁有者需決定是否建立其獨立 repo、納入既有專案，或加入適當忽略規則。完成後再執行 `sync-health -Agent All`。
-
-## 本次收工摘要
-
-2026-07-26 主 session 已完成三組圖卡與再生成規格的整理：HTML 佈建規則、agent-sync v1.2.0，以及四個 AI Agent 的短、中、長期記憶架構。正式資產均已納入本專案。
+已建立跨 Claude、Codex、Gemini 共用的每週知識重整契約，並在本機安裝唯一 Windows 排程 `SecondBrain-WeeklyKnowledgeReview`。目前以 Codex 執行唯讀 `preview`；2026-10-27 手動試跑 96 篇快照完成，Vault 雜湊差異為 0。
 
 ## 目前狀態
 
-- 專案 Git root、branch 與 remote 均符合 `PROJECT.md`。
-- 收工流程已完成；`main` 的最終 local HEAD 與 GitHub remote HEAD 已再次確認相同。
+- 排程：`Ready`，下一次 2026-11-01 20:00（Asia/Taipei）。
+- 模式：`preview`；不寫入 Vault，不自動消化 Evernote 歷史佇列，不處理私人健康資料。
+- 重複內容：`index.md`、`log.md` 與三組知識頁已合併；11 份副本保存在 Vault `Archive/知識庫重複版本_20261027/`。
+- Q&A：新增 4 條；唯一可編輯權威為 `docs/20260722-20260724-跨電腦跨AI-Agents架構對話Q&A.md`。
 
-## 交接資訊
+## 接手狀態
 
 - handoff_ready: yes
-- session start commit: `c83ce7d50b4a5cf69dacf8c7750964d3e5b7abbe`
+- session start commit: `c8143c8c645699227f0a635b1614b00eef6b1241`
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: `2026-07-26 20:34 +08:00`（收工完成後，final local HEAD = origin/main）
+- last sync verification: pending final closeout push
 - last updater: `Codex @ TZNB1169`
-- next Agent rule: 可先以 `project-startup` 進行唯讀檢查；若工作樹不乾淨、`handoff_ready` 非 yes 或 local HEAD 不等於 remote HEAD，必須停止並協調。
+- next Agent rule: 先執行 `project-startup`；通過後可檢查排程結果。若工作樹不乾淨、local HEAD 不等於 remote HEAD 或 `handoff_ready` 非 yes，停止寫入。
 
 ## 下一步
 
-1. 若有新的公開 HTML，依 `docs/images/html-deployment-rules/README.md` 選擇並執行發布路徑。
-2. 在第二台 Windows 電腦以另一個 Agent 跑一次 `project-startup` 與收工接力驗證。
-3. 若跨專案共用規則有異動，先確認 Migration Owner，再發布新的架構 release。
+1. 2026-11-01 20:00 後檢查 `SecondBrain-WeeklyKnowledgeReview` 首次正式執行結果與本機 `runs/`。
+2. 確認 Claude 舊 `weekly-knowledge-review` 沒有第二個有效觸發器，再評估自動寫入。
+3. Claude／Gemini 各自完成非互動唯讀演練後，才可加入 `validated_agents`；一次只選一個執行者。
 
 ## 注意事項
 
-- Google Drive 是 Knowledge／legacy source，禁止在 G 槽編輯、測試、建立 Git repo 或 commit。
-- 不可自動 rebase、merge、force push 或 destructive reset。
-- 公開 repo 不得提交 token、session、cache、私人 Obsidian 內容或其他敏感資料。
+- 排程僅在 `TZNB1169\\user` 已登入且主機於週日 20:00 開機時執行；錯過不補跑。
+- `automation/weekly-knowledge-review/runs/` 含 Vault 快照與執行結果，已 Git 忽略，禁止提交公開 repo。
+- Codex `approval=never` 會拒絕 Obsidian MCP；目前排程分析本機快照，不直接呼叫 MCP。
+- 自動寫入尚未授權或啟用；不可把 `preview` 的成功解讀為寫入流程已通過。
 
 ## 同步狀態
 
 | 層級 | 狀態 |
 |---|---|
-| Execution NTFS | 收工文件已更新 |
-| Version GitHub | 本次 commit 已推送，final local HEAD = remote HEAD |
-| Knowledge Google Drive | 本次未變更正式資料 |
-| Obsidian | 詳細收工紀錄已更新 |
+| Execution 本機 NTFS | 收工文件待 commit；排程已安裝並為 Ready |
+| Version GitHub | 功能 commit `9f82bc6` 已推送；收工文件待最終 push |
+| Knowledge Google Drive | Vault 重複內容已合併與封存；排程試跑未改動來源 |
+| Obsidian | `Projects/20260722-x-Computer-Agent-symbiosis.md` 已追加並讀回 |
+
+## 最後更新
+
+- 時間：2026-10-27 19:20 +08:00
+- 更新者：Codex @ TZNB1169
