@@ -18,7 +18,7 @@
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
-- last sync verification: pending final closeout push
+- last sync verification: 2026-10-27 19:21 +08:00；closeout commit `59b958c54a3b686c5fed2265fb9389256574abe6` 已確認 local HEAD = remote `main`
 - last updater: `Codex @ TZNB1169`
 - next Agent rule: 先執行 `project-startup`；通過後可檢查排程結果。若工作樹不乾淨、local HEAD 不等於 remote HEAD 或 `handoff_ready` 非 yes，停止寫入。
 
@@ -39,12 +39,12 @@
 
 | 層級 | 狀態 |
 |---|---|
-| Execution 本機 NTFS | 收工文件待 commit；排程已安裝並為 Ready |
-| Version GitHub | 功能 commit `9f82bc6` 已推送；收工文件待最終 push |
+| Execution 本機 NTFS | 工作樹乾淨；排程已安裝並為 Ready |
+| Version GitHub | 功能 commit `9f82bc6` 與 closeout commit `59b958c` 均已推送；closeout commit 已驗證與 `origin/main` 相等 |
 | Knowledge Google Drive | Vault 重複內容已合併與封存；排程試跑未改動來源 |
 | Obsidian | `Projects/20260722-x-Computer-Agent-symbiosis.md` 已追加並讀回 |
 
 ## 最後更新
 
-- 時間：2026-10-27 19:20 +08:00
+- 時間：2026-10-27 21:24 +08:00（修正最終同步紀錄）
 - 更新者：Codex @ TZNB1169
