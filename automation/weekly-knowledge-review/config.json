@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "job_id": "weekly-knowledge-review",
+  "activation": "draft",
+  "selected_agent": "codex",
+  "timezone": "Asia/Taipei",
+  "day_of_week": "Sunday",
+  "local_time": "20:00",
+  "workflow": "automation/weekly-knowledge-review/WORKFLOW.md",
+  "vault": "G:\\我的雲端硬碟\\第二大腦",
+  "default_mode": "preview"
+}
