@@ -28,6 +28,7 @@ $agentCommands = @{
 }
 $command = Get-Command $agentCommands[$selectedAgent] -ErrorAction SilentlyContinue
 $vaultAvailable = Test-Path -LiteralPath $config.vault
+$task = Get-ScheduledTask -TaskName $config.task_name -ErrorAction SilentlyContinue
 
 [pscustomobject]@{
     job_id = $config.job_id
@@ -38,5 +39,7 @@ $vaultAvailable = Test-Path -LiteralPath $config.vault
     command_available = ($null -ne $command)
     vault_available = $vaultAvailable
     runtime_prerequisites_met = ($null -ne $command -and $vaultAvailable)
-    schedule_installed = $false
+    schedule_installed = ($null -ne $task)
+    schedule_state = if ($task) { [string]$task.State } else { 'missing' }
+    mode = $config.default_mode
 } | ConvertTo-Json -Depth 3

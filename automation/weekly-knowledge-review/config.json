@@ -1,12 +1,15 @@
 {
   "schema_version": 1,
   "job_id": "weekly-knowledge-review",
-  "activation": "draft",
+  "activation": "active",
   "selected_agent": "codex",
+  "validated_agents": ["codex"],
+  "task_name": "SecondBrain-WeeklyKnowledgeReview",
   "timezone": "Asia/Taipei",
   "day_of_week": "Sunday",
   "local_time": "20:00",
   "workflow": "automation/weekly-knowledge-review/WORKFLOW.md",
   "vault": "G:\\我的雲端硬碟\\第二大腦",
+  "input_folders": ["Clippings", "創作庫", "知識庫", "每日筆記"],
   "default_mode": "preview"
 }
