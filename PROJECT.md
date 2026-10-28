@@ -39,6 +39,14 @@
 - 切換 Agent 時只更換執行 adapter；新 Agent 必須先通過命令列、唯讀輸入與停止條件驗證，才可加入 `validated_agents`。Gemini CLI 目前未安裝。
 - 自動寫入尚未啟用；須先確認舊 Claude 知識整理任務不會重複觸發，並通過寫入、讀回與重跑冪等性驗證。
 
+## LLM Wiki 與 Obsidian 知識治理（2026-10-28）
+
+- 已確認專案與知識層的分工：`PROJECT.md` 保存穩定專案事實、`HANDOFF.md` 保存最新交接、GitHub 保存正式版本；Obsidian `Projects/` 保存詳細歷程，`知識庫/` 保存跨專案可重用知識，`創作庫/` 保存經確認的輸出成果。
+- Obsidian 新增並讀回兩篇知識頁：`知識庫/20261028_AI Agent專案與Obsidian知識庫分工.md`、`知識庫/20261028_AI Agent知識治理與跨平台工作流.md`；`知識庫/index.md` 更新為 18 篇，`log.md` 已記錄本次操作。
+- 已用《餐巾紙的背後》的四步驟、六種問題與 SQVID 簡化框架產生原創手繪圖解；正式 Vault 圖片位於 `創作庫/AI Agent/20261028_AI Agent專案與Obsidian知識庫分工_餐巾紙圖解.png`，並由知識頁嵌入。
+- 2026-10-27 即時手動預覽 run `20261027T214953` 完成 96 篇快照，結果為 `PREVIEW_COMPLETE`，live Vault 與 manifest 雜湊差異為 0。正式排程非週日 20:00 直接觸發會被安全閘門拒絕；臨時演練應使用 `-ManualPreview`。
+- Google Workspace 遷移知識已以「治理建議」整理，包含盤點、身分與權限、單一權威、試點、驗收、AI 索引順序及避免平台鎖定；不代表目前遷移進度或已核准政策。
+
 ## 2026-07-26 成果
 
 - 完成 HTML 網頁佈建規則圖卡與再生成規格：`docs/images/html-deployment-rules/`。
