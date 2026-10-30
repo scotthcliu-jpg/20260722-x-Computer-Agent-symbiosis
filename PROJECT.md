@@ -19,7 +19,7 @@
 | GitHub | `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git` |
 | Branch | `main` |
 | Knowledge／legacy source | Google Drive 僅供知識與舊資料參考，不可作為執行、Git 或提交位置 |
-| Architecture release | `agent-sync-v1.2.3` |
+| Architecture release | `agent-sync-v1.2.4` |
 
 ## 已確認決策
 
@@ -28,6 +28,11 @@
 3. `PROJECT.md`、`HANDOFF.md`、`AGENTS.md`、`CLAUDE.md` 是專案接力的 canonical files。
 4. Google Drive 用於發布 `core_rule.md`、同步 Obsidian 與保存核准資料；不作為 Git working tree，也不同步 `.git` 或暫存檔。
 5. 公開靜態 HTML 預設由 `main/docs` 的 `docs/index.html` 透過 GitHub Pages 發布；Cloudflare Pages、Netlify、Google Sites 依文件規則分工。
+
+## 開新專案 Skill（2026-10-30）
+
+- 共用 `000_Agent/skills/new-project/SKILL.md` 以「開新專案」提供入口：收齊專案名稱、目標與期限、GitHub 倉庫名稱後，執行 `project-init-sync`，再將精確本機資料夾登錄 Codex App 左側專案清單。
+- 架構 release `agent-sync-v1.2.4` 已推送並建立同名 tag；chezmoi 部署 hook 已加入 Codex／OpenCode Skill 入口。 `sync-health.ps1 -Agent All` 於本機驗證為 PASS。
 
 ## 跨 Agent 每週知識重整（2026-10-27）
 
