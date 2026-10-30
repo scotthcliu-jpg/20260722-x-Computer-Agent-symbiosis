@@ -33,6 +33,7 @@
 
 - 共用 `000_Agent/skills/new-project/SKILL.md` 以「開新專案」提供入口：收齊專案名稱、目標與期限、GitHub 倉庫名稱後，執行 `project-init-sync`，再將精確本機資料夾登錄 Codex App 左側專案清單。
 - 架構 release `agent-sync-v1.2.4` 已推送並建立同名 tag；chezmoi 部署 hook 已加入 Codex／OpenCode Skill 入口。 `sync-health.ps1 -Agent All` 於本機驗證為 PASS。
+- 2026-10-30 將 Skill 的三項輸入、十階段執行與驗證清單寫入 Obsidian `知識庫/20261030_開新專案Skill執行流程.md`；黑板圖正式版本及生成規格存於 `docs/images/new-project-skill/`，Vault 使用相同雜湊的展示副本。
 
 ## 跨 Agent 每週知識重整（2026-10-27）
 

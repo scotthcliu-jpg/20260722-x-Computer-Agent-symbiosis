@@ -2,21 +2,22 @@
 
 ## 目前做到哪
 
-已發布共用「開新專案」Skill（`new-project`）：依序收集三項輸入、執行 `project-init-sync`，並驗證 Codex App 左側本機專案登錄。共用架構 `agent-sync-v1.2.4` 與 chezmoi 入口已推送；`sync-health.ps1 -Agent All` 為 PASS。前次每週知識預覽演練與 Obsidian 知識整理成果保留於下方狀態。
+已發布共用「開新專案」Skill（`new-project`），並把三項輸入、十階段執行清單與黑板流程圖寫入 Obsidian 知識庫，筆記、索引與圖片皆已讀回或核對雜湊。共用架構 `agent-sync-v1.2.4` 與 chezmoi 入口已推送；`sync-health.ps1 -Agent All` 為 PASS。前次每週知識預覽演練成果保留於下方狀態。
 
 ## 目前狀態
 
 - 新 Skill：`000_Agent/skills/new-project/SKILL.md` 已追蹤；Codex 與 OpenCode junction 已驗證，Claude 共用 Skills 根目錄可讀。
 - 排程：`Ready`，下一次 2026-11-01 20:00（Asia/Taipei）；`LastTaskResult = 1` 是 2026-10-27 非排程時段直接觸發被安全閘門拒絕，不是手動預覽失敗。
 - 模式：`preview`；不寫入 Vault，不自動消化 Evernote 歷史佇列，不處理私人健康資料。
-- 知識成果：`知識庫/20261028_AI Agent專案與Obsidian知識庫分工.md`、`知識庫/20261028_AI Agent知識治理與跨平台工作流.md` 已建立；索引共 18 篇。
+- 知識成果：`知識庫/20261028_AI Agent專案與Obsidian知識庫分工.md`、`知識庫/20261028_AI Agent知識治理與跨平台工作流.md` 等已建立；索引共 20 篇。
 - 圖解成果：`創作庫/AI Agent/20261028_AI Agent專案與Obsidian知識庫分工_餐巾紙圖解.png` 已嵌入原知識頁，附件區未留副本。
+- 新增知識頁：`知識庫/20261030_開新專案Skill執行流程.md`；索引共 20 篇。黑板圖正式版本與生成說明在 `docs/images/new-project-skill/`，Vault 展示副本位於 `創作庫/AI Agent/`。
 - Q&A：無新增；前次 6 條的唯一可編輯權威為 `docs/20260722-20260724-跨電腦跨AI-Agents架構對話Q&A.md`。
 
 ## 接手狀態
 
 - handoff_ready: yes
-- session start commit: `06c4f5f4eb6261e4c5f0cb4c3729c40ba89f81a6`
+- session start commit: `c95bfe7d04d70aae2ae03545dcfc6045c2a4dc4d`
 - expected Git root: `C:\Users\user\Documents\Codex\2026Claude\100_Todo\projects\active\20260722-x-Computer-Agent-symbiosis`
 - expected branch: `main`
 - expected remote: `https://github.com/scotthcliu-jpg/20260722-x-Computer-Agent-symbiosis.git`
@@ -42,12 +43,12 @@
 
 | 層級 | 狀態 |
 |---|---|
-| Execution 本機 NTFS | 本次更新 `PROJECT.md` 與 `HANDOFF.md`；Skill 本體在共用架構 Git root |
-| Version GitHub | 共用架構 v1.2.4 與 chezmoi 入口已推送；本專案交接更新以 remote HEAD 驗證 |
+| Execution 本機 NTFS | 本次更新 `PROJECT.md`、`HANDOFF.md` 及黑板圖正式檔／生成說明；Skill 本體在共用架構 Git root |
+| Version GitHub | 共用架構 v1.2.4 與 chezmoi 入口已推送；本專案交接更新 push 後以 remote HEAD 驗證 |
 | Knowledge Google Drive | 本次未修改來源；前次 Vault 預覽雜湊差異 0 |
-| Obsidian | 本次未修改；前次兩篇知識頁、索引與創作庫圖片已讀回 |
+| Obsidian | 新知識頁與索引已讀回；黑板圖在 Vault 的展示副本與正式圖檔 SHA-256 一致 |
 
 ## 最後更新
 
-- 時間：2026-10-30 15:21 +08:00
+- 時間：2026-10-30 22:18 +08:00
 - 更新者：Codex @ TZNB1169
